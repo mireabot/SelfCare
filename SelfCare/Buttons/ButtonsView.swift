@@ -37,6 +37,19 @@ struct ButtonNonFilled : View {
     }
 }
 
+struct ButtonNonFilledWhite : View {
+    var buttonLabel : String
+    var body: some View {
+        VStack {
+            Text(buttonLabel)
+                .font(Font.custom("Poppins-Medium", size: 16))
+                .foregroundColor(.white)
+        }
+        .frame(width: UIScreen.main.bounds.width - 40, height: 42)
+        .background(RoundedRectangle(cornerRadius: 8).stroke(Color.white))
+    }
+}
+
 struct ButtonNonFilledColor : View {
     var buttonLabel : String
     var color : String

@@ -29,6 +29,16 @@ struct ServiceHub: View {
                 Spacer()
             }.padding()
             
+            if card.title == "Medical List"{
+                NoMedicalRecord()
+            }
+            if card.title == "Lab Results"{
+                NoLabRecord()
+            }
+            if card.title == "Covid-19"{
+                NewCovidRecord()
+            }
+            
             Spacer()
         }
         .navigationTitle("")

@@ -16,10 +16,9 @@ struct Card : Identifiable {
 }
 
 let card = [
-    Card(image: "card1", title: "Your Diet Chart"),
-    Card(image: "card2", title: "Medical History"),
-    Card(image: "card3", title: "Lab Results"),
-    Card(image: "card3", title: "Covid-19"),
+    Card(image: "card1", title: "Medical List"),
+    Card(image: "card2", title: "Lab Results"),
+    Card(image: "card3", title: "Covid-19")
 ]
 struct CardView : View {
     var data: Card
@@ -33,8 +32,8 @@ struct CardView : View {
                 Spacer()
                 
                 Image(data.image)
-                    .resizable()
-                    .frame(width: 152, height: 116)
+//                    .resizable()
+//                    .frame(width: 144, height: 108)
             }.padding()
             .frame(width: UIScreen.main.bounds.width - 40, height: 116)
             .background(RoundedRectangle(cornerRadius: 8).fill(Color("primary6")))

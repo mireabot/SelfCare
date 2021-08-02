@@ -20,6 +20,15 @@ struct NotificationsScreen : View {
                 Spacer()
             }.padding()
             
+            
+            ScrollView(.vertical, showsIndicators: false){
+                VStack(spacing: 20){
+                    ForEach(notification_data){ notification in
+                        Notification_View(notifications: notification)
+                    }
+                }
+            }
+            
             Spacer()
         }
     }

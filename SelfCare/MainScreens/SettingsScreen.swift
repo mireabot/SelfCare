@@ -29,6 +29,9 @@ struct SettingsScreen : View {
             }
             
             Spacer()
+            PremiumCard()
+            
+            Spacer()
         }
     }
 }

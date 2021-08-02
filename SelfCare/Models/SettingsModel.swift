@@ -37,12 +37,15 @@ struct SettingsView : View {
             Spacer()
             
             Button(action: {
-                self.show.toggle()
+//                self.show.toggle()
             }) {
                 Image(systemName: "chevron.right")
                     .font(.system(size: 16))
                     .foregroundColor(Color("primary4"))
             }
+        }
+        .onTapGesture {
+            self.show.toggle()
         }
         .fullScreenCover(isPresented: $show){
             SettingsHub(settings: settings)
