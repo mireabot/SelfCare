@@ -46,6 +46,8 @@
 		6A25A22526B1DFD60079813A /* OnboardigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25A22426B1DFD60079813A /* OnboardigView.swift */; };
 		6A25A22826B1E3080079813A /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25A22726B1E3080079813A /* SettingsScreen.swift */; };
 		6A2A31F626B834E600A11040 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2A31F526B834E600A11040 /* NotificationModel.swift */; };
+		6A73F65826B99985005D9DC3 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73F65726B99985005D9DC3 /* Onboarding.swift */; };
+		6A73F65A26B9B8D6005D9DC3 /* MedcineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73F65926B9B8D6005D9DC3 /* MedcineModel.swift */; };
 		6A80343426B2E53500E4EC59 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80343326B2E53500E4EC59 /* OnboardingModel.swift */; };
 		6A80343626B2E65A00E4EC59 /* OnboardingWalkThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80343526B2E65A00E4EC59 /* OnboardingWalkThrough.swift */; };
 		6A80343826B2EA3000E4EC59 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80343726B2EA2F00E4EC59 /* HomeScreen.swift */; };
@@ -129,6 +131,8 @@
 		6A25A22426B1DFD60079813A /* OnboardigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardigView.swift; sourceTree = "<group>"; };
 		6A25A22726B1E3080079813A /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		6A2A31F526B834E600A11040 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		6A73F65726B99985005D9DC3 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		6A73F65926B9B8D6005D9DC3 /* MedcineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedcineModel.swift; sourceTree = "<group>"; };
 		6A80343326B2E53500E4EC59 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		6A80343526B2E65A00E4EC59 /* OnboardingWalkThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWalkThrough.swift; sourceTree = "<group>"; };
 		6A80343726B2EA2F00E4EC59 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				6A14985026B85B6E00C378D1 /* NoRecords.swift */,
+				6A73F65726B99985005D9DC3 /* Onboarding.swift */,
 			);
 			path = "Medical List";
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				6A89976526B471C900FA0BAD /* SettingsModel.swift */,
 				6A89977126B4851300FA0BAD /* HeaderModel.swift */,
 				6A2A31F526B834E600A11040 /* NotificationModel.swift */,
+				6A73F65926B9B8D6005D9DC3 /* MedcineModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -559,6 +565,7 @@
 				6A89976B26B47B3D00FA0BAD /* AccountSettings.swift in Sources */,
 				6A14985926B8638500C378D1 /* AddRecord.swift in Sources */,
 				6A89976626B471C900FA0BAD /* SettingsModel.swift in Sources */,
+				6A73F65826B99985005D9DC3 /* Onboarding.swift in Sources */,
 				6A80343D26B3236700E4EC59 /* ServiceScreen.swift in Sources */,
 				6A80343826B2EA3000E4EC59 /* HomeScreen.swift in Sources */,
 				6A89975E26B43DDD00FA0BAD /* Notifications.swift in Sources */,
@@ -570,6 +577,7 @@
 				6A89976426B43FA100FA0BAD /* ProfileScreen.swift in Sources */,
 				6A89977226B4851300FA0BAD /* HeaderModel.swift in Sources */,
 				6A14985726B862F200C378D1 /* NoCovidRecord.swift in Sources */,
+				6A73F65A26B9B8D6005D9DC3 /* MedcineModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

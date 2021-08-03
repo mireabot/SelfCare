@@ -59,6 +59,7 @@ struct NewCovidRecord_Previews: PreviewProvider {
 }
 
 struct AddVaccine : View {
+    @Environment(\.presentationMode) var present
     var body: some View {
         VStack {
             HStack{
@@ -69,7 +70,7 @@ struct AddVaccine : View {
                 Spacer()
                 
                 Button(action: {
-                    
+                    self.present.wrappedValue.dismiss()
                 }){
                     Image(systemName: "xmark")
                         .font(.system(size: 16))
