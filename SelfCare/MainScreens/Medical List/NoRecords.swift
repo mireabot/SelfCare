@@ -59,10 +59,12 @@ struct NoMedicalRecord : View {
                     Spacer()
                     
                     Button(action: {
-                        
+                        self.add.toggle()
                     }){
                         ButtonFilled(buttonLabel: "Add")
                     }
+                }.fullScreenCover(isPresented: $add){
+                    AddMedcine()
                 }
             }
         }

@@ -18,7 +18,7 @@ struct Notification : Identifiable {
 }
 
 let notification_data = [
-    Notification(color: "primary1", title: "Notification", subtitle: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, ipsum dolor",subcolor: "error"),
+    Notification(color: "primary1", title: "Buy medcine", subtitle: "We remind you to buy medcine from list",subcolor: "error"),
     Notification(color: "primary1", title: "Notification", subtitle: "Lorem ipsum dolor sit amet, consectetur",subcolor: "secondary")
 ]
 

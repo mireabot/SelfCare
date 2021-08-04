@@ -7,12 +7,15 @@
 
 import Foundation
 import SwiftUI
+import Firebase
 
 struct LoginScreen : View {
     @State var email = ""
     @State var correct = true
     @State var pass = ""
     @State var visible = false
+    @State var error = ""
+    @AppStorage("is_logged") var status = false
     var body: some View {
         VStack {
             VStack(spacing: 10){
@@ -72,7 +75,20 @@ struct LoginScreen : View {
                 }.padding(1)
                 
                 Button(action: {
-                    
+                    if self.email != "" && self.pass != ""{
+                        
+                        Auth.auth().signIn(withEmail: self.email, password: self.pass) { (res, err) in
+                            
+                            if err != nil{
+                                
+                                self.error = err!.localizedDescription
+                                return
+                            }
+                            
+                            print("success")
+                            self.status = true
+                        }
+                    }
                 }){
                     ButtonFilled(buttonLabel: "Login")
                 }

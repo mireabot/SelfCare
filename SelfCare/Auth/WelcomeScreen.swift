@@ -7,13 +7,17 @@
 
 import Foundation
 import SwiftUI
-
+import Firebase
 
 
 struct WelcomeScreen : View {
     @State var weight = ""
     @State var height = ""
     @State var birthday = ""
+    @State var name = ""
+    @State var email = ""
+    @AppStorage("is_logged") var status = false
+    @StateObject var FirebaseService = AccountViewModel()
     var body: some View {
         VStack {
             HStack {
@@ -50,7 +54,8 @@ struct WelcomeScreen : View {
                     .frame(width: UIScreen.main.bounds.width - 40, height: 46)
             }
             Button(action: {
-                
+                FirebaseService.RegisterUser(name: name, weight: weight, height: height,email: email,birthday: birthday)
+                self.status = true
             }) {
                 ButtonFilled(buttonLabel: "Next")
             }.padding()
@@ -67,6 +72,11 @@ struct WelcomeScreen : View {
                 }
             }
             Spacer()
+        }.onAppear{
+            guard let retrive1  = UserDefaults.standard.string(forKey: "Name") else { return }
+            self.name = retrive1
+            guard let retrive2  = UserDefaults.standard.string(forKey: "Email") else { return }
+            self.email = retrive2
         }
     }
 }

@@ -11,10 +11,12 @@ import SwiftUI
 
 struct HomeScreen : View {
     @State var showProfile = false
+    @State var name = ""
+    @StateObject var FirebaseService = AccountViewModel()
     var body: some View {
         VStack {
             HStack {
-                Text("👋🏻 Hi Julia!")
+                Text("👋🏻 Hi \(name)!")
                     .font(Font.custom("Poppins-SemiBold", size: 24))
                     .foregroundColor(Color("primary1"))
                 Spacer()
@@ -45,6 +47,10 @@ struct HomeScreen : View {
             }.padding()
             
             Spacer()
+        }
+        .onAppear{
+            guard let retrive1  = UserDefaults.standard.string(forKey: "Name") else { return }
+            self.name = retrive1
         }
     }
 }

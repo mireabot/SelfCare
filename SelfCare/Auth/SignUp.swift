@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Firebase
 
 struct SignUpScreen : View {
     @State var email = ""
@@ -14,6 +15,9 @@ struct SignUpScreen : View {
     @State var correct = true
     @State var pass = ""
     @State var visible = false
+    @State var error = ""
+    @State var next = false
+    @AppStorage("is_logged") var status = false
     var body: some View {
         VStack {
             VStack(spacing: 10){
@@ -67,9 +71,35 @@ struct SignUpScreen : View {
                 .frame(width: UIScreen.main.bounds.width - 40, height: 46)
                 
                 Button(action: {
-                    
+                    if self.email != ""{
+                        
+                        if self.pass != ""{
+                            
+                            Auth.auth().createUser(withEmail: self.email, password: self.pass) { (res, err) in
+                                
+                                if err != nil{
+                                    
+                                    self.error = err!.localizedDescription
+                                    self.correct = false
+                                    return
+                                }
+                                
+                                print("success")
+                                self.next.toggle(
+                                )
+                                print("Success = \(res!.user.uid)")
+                                // After Logging in Fetching Data
+                                UserDefaults.standard.setValue(res!.user.uid, forKey: "UserID")
+                            }
+                        }
+                    }
+                    UserDefaults.standard.set(self.name, forKey: "Name")
+                    UserDefaults.standard.set(self.email, forKey: "Email")
                 }){
                     ButtonFilled(buttonLabel: "Sign Up")
+                }
+                .fullScreenCover(isPresented: $next){
+                    WelcomeScreen()
                 }
             }.padding()
             

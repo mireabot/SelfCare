@@ -10,16 +10,22 @@ import SwiftUI
 struct ContentView: View {
     @State private var animate = false
     @State private var endSplash = false
+    @AppStorage("is_logged") var status = false
     var body: some View {
         ZStack {
-            NavigationView{
-                 
-                 CustomTabView()
-                     .navigationTitle("")
-                     .navigationBarTitleDisplayMode(.inline)
-                     .navigationBarHidden(true)
-                     .preferredColorScheme(.light)
-             }
+            if self.status {
+                NavigationView{
+                     
+                     CustomTabView()
+                         .navigationTitle("")
+                         .navigationBarTitleDisplayMode(.inline)
+                         .navigationBarHidden(true)
+                         .preferredColorScheme(.light)
+                 }
+            }
+            else {
+                SplashScreen()
+            }
             ZStack {
                 Color("primary1")
                 Image("Splash1")
