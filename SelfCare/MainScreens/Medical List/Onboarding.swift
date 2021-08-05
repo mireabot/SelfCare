@@ -94,6 +94,10 @@ struct MedicalOnboarding_Previews: PreviewProvider {
 
 struct AddFirstMedcine : View {
     @AppStorage("firstMedcine") var medcine = false
+    @StateObject var FirebaseService = MedcineOperationModel()
+    @State var name = ""
+    @State var category = ""
+    @State var reminder = ""
     var body: some View {
         VStack(spacing: 20) {
             HStack {
@@ -106,23 +110,22 @@ struct AddFirstMedcine : View {
             
             Header(text: "Name of medcine", color: "primary4", size: 14, font: "Poppins-Regular")
             HStack {
-                Text("Xyzal Allergy 24hr Tablets")
-                    .font(Font.custom("Poppins-Medium", size: 16))
-                    .foregroundColor(Color("primary1"))
+                TextField("Name", text: $name)
+                    .frame(width: UIScreen.main.bounds.width - 30, height: 46)
                 Spacer()
             }.padding()
             
             Header(text: "Category", color: "primary4", size: 14, font: "Poppins-Regular")
             HStack {
-                Text("Allergy & Asthma")
-                    .font(Font.custom("Poppins-Medium", size: 16))
-                    .foregroundColor(Color("primary1"))
+                TextField("Category", text: $category)
+                    .frame(width: UIScreen.main.bounds.width - 30, height: 46)
                 Spacer()
             }.padding()
             
             
             Button(action: {
                 self.medcine = true
+                FirebaseService.addMedcine(medcineName: name, category: category, reminder: reminder)
             }){
                 ButtonFilled(buttonLabel: "Continue")
             }.padding(.top, 40)
@@ -134,6 +137,7 @@ struct AddFirstMedcine : View {
                 Spacer()
                 Button(action: {
                     self.medcine = false
+                    self.reminder = "ON"
                 }){
                     Circle()
                         .fill(Color.black.opacity(0.05))

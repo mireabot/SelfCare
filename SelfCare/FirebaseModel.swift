@@ -37,10 +37,10 @@ class AccountViewModel: NSObject,ObservableObject {
     }
     
     func fetchUsers(){
+        
+        let db = Firestore.firestore()
             
-            let db = Firestore.firestore()
-            
-            db.collection("Users").getDocuments { (snap, err) in
+        db.collection("Users").addSnapshotListener { (snap, err) in
                 
                 guard let itemData = snap else{return}
                 
@@ -60,3 +60,54 @@ class AccountViewModel: NSObject,ObservableObject {
     }
 }
 
+class MedcineOperationModel : NSObject, ObservableObject {
+    
+    @Published var medcines: [MedcineModel] = []
+    
+    func addMedcine(medcineName: String, category: String, reminder: String){
+        let db = Firestore.firestore()
+        
+        db.collection("MedcinesList").document(randomString(length: 20)).setData([
+        
+            "MedcineName": medcineName,
+            "UserID": UserDefaults.standard.string(forKey: "UserID") ?? "",
+            "Category": category,
+            "Reminder": reminder
+            
+        ]) { (err) in
+            
+            if err != nil{
+                
+                return
+            }
+        }
+        print("MedcineAdd")
+    }
+    func randomString(length: Int) -> String {
+      let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+      print( String((0..<length).map{ _ in letters.randomElement()! }))
+        return String((0..<length).map{ _ in letters.randomElement()! })
+    }
+    
+    func fetchMedcine(){
+        
+        let db = Firestore.firestore()
+            
+        db.collection("MedcinesList").addSnapshotListener { (snap, err) in
+                
+                guard let itemData = snap else{return}
+                
+                self.medcines = itemData.documents.compactMap({ (doc) -> MedcineModel? in
+                    
+                    let id = doc.documentID
+                    let name = doc.get("MedcineName") as! String
+                    let userID = doc.get("UserID") as! String
+                    let category = doc.get("Category") as! String
+                    let reminder = doc.get("Reminder") as! String
+                    
+                    return MedcineModel(id: id, reminder: reminder, name: name, category: category, userID: userID)
+                    
+                })
+            }
+    }
+}

@@ -12,8 +12,9 @@ import SwiftUI
 struct AddMedcine : View {
     @Environment(\.presentationMode) var present
     @State var name = ""
+    @StateObject var Medcine = MedcineOperationModel()
     @State var category = ""
-    @State var reminder = false
+    @State var reminder = "OFF"
     var body: some View {
         VStack(spacing: 20) {
             
@@ -54,6 +55,7 @@ struct AddMedcine : View {
             
             Button(action: {
                 self.present.wrappedValue.dismiss()
+                Medcine.addMedcine(medcineName: name, category: category, reminder: reminder)
             }){
                 if self.name != "" && self.category != "" {
                     ButtonFilled(buttonLabel: "Add")
@@ -71,10 +73,10 @@ struct AddMedcine : View {
                     .foregroundColor(Color("primary3"))
                 Spacer()
                 Button(action: {
-                    self.reminder.toggle()
+                    self.reminder = "ON"
                 }){
                     Circle()
-                        .fill(self.reminder == true ? Color("primary1") : Color.black.opacity(0.08))
+                        .fill(self.reminder == "ON" ? Color("primary1") : Color.black.opacity(0.08))
                         .frame(width: 20, height: 20)
                 }
             }.padding()

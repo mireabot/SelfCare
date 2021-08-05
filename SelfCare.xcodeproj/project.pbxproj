@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B070896464EB8E9F12E49EC /* Pods_SelfCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EE6CC209ACF73870EDD0A3 /* Pods_SelfCare.framework */; };
 		64D2FD3A653C121CEF3B2C92 /* Pods_SelfCare_SelfCareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DE356EC7A7D30636C609A6 /* Pods_SelfCare_SelfCareUITests.framework */; };
+		6A097CD126BC2B2B00E68FBE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A097CD026BC2B2B00E68FBE /* GoogleService-Info.plist */; };
 		6A14984E26B8473F00C378D1 /* Premium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14984D26B8473F00C378D1 /* Premium.swift */; };
 		6A14985126B85B6E00C378D1 /* NoRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14985026B85B6E00C378D1 /* NoRecords.swift */; };
 		6A14985426B8622E00C378D1 /* NoLabRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14985326B8622E00C378D1 /* NoLabRecord.swift */; };
@@ -48,7 +49,6 @@
 		6A25A22526B1DFD60079813A /* OnboardigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25A22426B1DFD60079813A /* OnboardigView.swift */; };
 		6A25A22826B1E3080079813A /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25A22726B1E3080079813A /* SettingsScreen.swift */; };
 		6A2A31F626B834E600A11040 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2A31F526B834E600A11040 /* NotificationModel.swift */; };
-		6A3C42F726BB13790021EF39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A3C42F626BB13790021EF39 /* GoogleService-Info.plist */; };
 		6A3C42FA26BB15BD0021EF39 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42F926BB15BD0021EF39 /* FirebaseModel.swift */; };
 		6A3C42FC26BB1F900021EF39 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42FB26BB1F900021EF39 /* UserModel.swift */; };
 		6A3C42FE26BB2A9D0021EF39 /* ProfileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42FD26BB2A9D0021EF39 /* ProfileLoader.swift */; };
@@ -100,6 +100,7 @@
 		2443B8DCFA4F24755B4E6463 /* Pods-SelfCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfCare.debug.xcconfig"; path = "Target Support Files/Pods-SelfCare/Pods-SelfCare.debug.xcconfig"; sourceTree = "<group>"; };
 		39DE356EC7A7D30636C609A6 /* Pods_SelfCare_SelfCareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfCare_SelfCareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A2A378180EE5B4A91C095B /* Pods-SelfCare-SelfCareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfCare-SelfCareUITests.debug.xcconfig"; path = "Target Support Files/Pods-SelfCare-SelfCareUITests/Pods-SelfCare-SelfCareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A097CD026BC2B2B00E68FBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6A14984D26B8473F00C378D1 /* Premium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Premium.swift; sourceTree = "<group>"; };
 		6A14985026B85B6E00C378D1 /* NoRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRecords.swift; sourceTree = "<group>"; };
 		6A14985326B8622E00C378D1 /* NoLabRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLabRecord.swift; sourceTree = "<group>"; };
@@ -144,7 +145,6 @@
 		6A25A22426B1DFD60079813A /* OnboardigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardigView.swift; sourceTree = "<group>"; };
 		6A25A22726B1E3080079813A /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		6A2A31F526B834E600A11040 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
-		6A3C42F626BB13790021EF39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6A3C42F926BB15BD0021EF39 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		6A3C42FB26BB1F900021EF39 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		6A3C42FD26BB2A9D0021EF39 /* ProfileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoader.swift; sourceTree = "<group>"; };
@@ -266,6 +266,7 @@
 				6A25A21326B1C5D50079813A /* Auth */,
 				6A25A1C126B1C41B0079813A /* SelfCareApp.swift */,
 				6A25A1C326B1C41B0079813A /* ContentView.swift */,
+				6A097CD026BC2B2B00E68FBE /* GoogleService-Info.plist */,
 				6A25A1C526B1C41D0079813A /* Assets.xcassets */,
 				6A25A1CA26B1C41D0079813A /* Info.plist */,
 				6A25A1EC26B1C42F0079813A /* Poppins */,
@@ -330,7 +331,6 @@
 		6A25A21326B1C5D50079813A /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				6A3C42F626BB13790021EF39 /* GoogleService-Info.plist */,
 				6A25A21426B1C5FC0079813A /* Splash.swift */,
 				6A25A21926B1D3F60079813A /* Login.swift */,
 				6A25A21E26B1DCD00079813A /* SignUp.swift */,
@@ -585,7 +585,7 @@
 				6A25A20526B1C42F0079813A /* Poppins-Medium.ttf in Resources */,
 				6A25A1C926B1C41D0079813A /* Preview Assets.xcassets in Resources */,
 				6A25A21126B1C42F0079813A /* Poppins-Italic.ttf in Resources */,
-				6A3C42F726BB13790021EF39 /* GoogleService-Info.plist in Resources */,
+				6A097CD126BC2B2B00E68FBE /* GoogleService-Info.plist in Resources */,
 				6A25A21226B1C42F0079813A /* Poppins-MediumItalic.ttf in Resources */,
 				6A25A1C626B1C41D0079813A /* Assets.xcassets in Resources */,
 			);

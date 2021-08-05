@@ -10,16 +10,12 @@ import SwiftUI
 
 
 struct MedcineModel : Identifiable {
-    let id = UUID().uuidString
-    let reminder: String
-    let title: String
-    let category: String
+    var id : String
+    var reminder: String
+    var name: String
+    var category: String
+    var userID: String
 }
-
-let medcine_data = [
-    MedcineModel(reminder: "ON", title: "Xyzal Allergy 24hr Tablets", category: "Allergy & Asthma")
-]
-
 
 struct MedcineCard_View : View {
     var medcine : MedcineModel
@@ -27,7 +23,7 @@ struct MedcineCard_View : View {
         HStack {
             VStack(alignment: .leading, spacing: 5){
                 HStack {
-                    Text(medcine.title)
+                    Text(medcine.name)
                         .font(Font.custom("Poppins-Regular", size: 16))
                         .foregroundColor(Color("primary1"))
                 }

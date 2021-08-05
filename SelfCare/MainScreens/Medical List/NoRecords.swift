@@ -11,7 +11,9 @@ import SwiftUI
 
 struct NoMedicalRecord : View {
     @State var add = false
+    @StateObject var Medcine = MedcineOperationModel()
     @AppStorage("firstMedcine") var medcine = false
+    @State var userID = ""
     var body: some View {
         ZStack {
             if self.medcine == false {
@@ -48,25 +50,32 @@ struct NoMedicalRecord : View {
             }
             
             if self.medcine == true {
-                VStack {
-                    ScrollView(.vertical, showsIndicators: false){
-                        VStack(spacing: 20){
-                            ForEach(medcine_data){ medcines in
-                                MedcineCard_View(medcine: medcines)
+                        VStack {
+                            ScrollView(.vertical, showsIndicators: false){
+                                VStack(spacing: 20){
+                                    ForEach(Medcine.medcines){ medcines in
+                                        if medcines.userID == userID {
+                                        MedcineCard_View(medcine: medcines)
+                                        }
+                                    }
+                                }
                             }
+                            Spacer()
+                            
+                            Button(action: {
+                                self.add.toggle()
+                            }){
+                                ButtonFilled(buttonLabel: "Add")
+                            }
+                        }.fullScreenCover(isPresented: $add){
+                            AddMedcine()
                         }
-                    }
-                    Spacer()
-                    
-                    Button(action: {
-                        self.add.toggle()
-                    }){
-                        ButtonFilled(buttonLabel: "Add")
-                    }
-                }.fullScreenCover(isPresented: $add){
-                    AddMedcine()
-                }
             }
+        }
+        .onAppear{
+            Medcine.fetchMedcine()
+            guard let retrive1  = UserDefaults.standard.string(forKey: "UserID") else { return }
+            self.userID = retrive1
         }
     }
 }
