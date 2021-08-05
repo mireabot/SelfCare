@@ -52,6 +52,7 @@
 		6A3C42FA26BB15BD0021EF39 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42F926BB15BD0021EF39 /* FirebaseModel.swift */; };
 		6A3C42FC26BB1F900021EF39 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42FB26BB1F900021EF39 /* UserModel.swift */; };
 		6A3C42FE26BB2A9D0021EF39 /* ProfileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42FD26BB2A9D0021EF39 /* ProfileLoader.swift */; };
+		6A636B6B26BC70B800B00EB4 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 6A636B6A26BC70B800B00EB4 /* SwiftUICharts */; };
 		6A73F65826B99985005D9DC3 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73F65726B99985005D9DC3 /* Onboarding.swift */; };
 		6A73F65A26B9B8D6005D9DC3 /* MedcineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73F65926B9B8D6005D9DC3 /* MedcineModel.swift */; };
 		6A80343426B2E53500E4EC59 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80343326B2E53500E4EC59 /* OnboardingModel.swift */; };
@@ -181,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A14985C26B870A300C378D1 /* SwiftUIDatePickerDialog in Frameworks */,
+				6A636B6B26BC70B800B00EB4 /* SwiftUICharts in Frameworks */,
 				6A89977026B47FA900FA0BAD /* SunMoonToggleStyle in Frameworks */,
 				0B070896464EB8E9F12E49EC /* Pods_SelfCare.framework in Frameworks */,
 			);
@@ -471,6 +473,7 @@
 			packageProductDependencies = (
 				6A89976F26B47FA900FA0BAD /* SunMoonToggleStyle */,
 				6A14985B26B870A300C378D1 /* SwiftUIDatePickerDialog */,
+				6A636B6A26BC70B800B00EB4 /* SwiftUICharts */,
 			);
 			productName = SelfCare;
 			productReference = 6A25A1BE26B1C41B0079813A /* SelfCare.app */;
@@ -549,6 +552,8 @@
 			packageReferences = (
 				6A89976E26B47FA900FA0BAD /* XCRemoteSwiftPackageReference "SunMoonToggleStyle" */,
 				6A14985A26B870A300C378D1 /* XCRemoteSwiftPackageReference "swiftui-date-picker-dialog" */,
+				6A636B6926BC70B800B00EB4 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				6A636B6C26BC717C00B00EB4 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 6A25A1BF26B1C41B0079813A /* Products */;
 			projectDirPath = "";
@@ -1089,6 +1094,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		6A636B6926BC70B800B00EB4 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mecid/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.3;
+			};
+		};
+		6A636B6C26BC717C00B00EB4 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
 		6A89976E26B47FA900FA0BAD /* XCRemoteSwiftPackageReference "SunMoonToggleStyle" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/puthnith/SunMoonToggleStyle";
@@ -1104,6 +1125,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6A14985A26B870A300C378D1 /* XCRemoteSwiftPackageReference "swiftui-date-picker-dialog" */;
 			productName = SwiftUIDatePickerDialog;
+		};
+		6A636B6A26BC70B800B00EB4 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A636B6926BC70B800B00EB4 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
 		};
 		6A89976F26B47FA900FA0BAD /* SunMoonToggleStyle */ = {
 			isa = XCSwiftPackageProductDependency;
