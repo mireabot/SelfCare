@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import SwiftUIDatePickerDialog
 
 struct NewCovidRecord : View {
     @State var alert = false

@@ -36,7 +36,7 @@ struct ServiceHub: View {
                 NoLabRecord()
             }
             if card.title == "Covid-19"{
-                NewCovidRecord()
+                Covid_Home()
             }
             
             Spacer()

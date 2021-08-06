@@ -15,7 +15,6 @@
 		6A14985426B8622E00C378D1 /* NoLabRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14985326B8622E00C378D1 /* NoLabRecord.swift */; };
 		6A14985726B862F200C378D1 /* NoCovidRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14985626B862F200C378D1 /* NoCovidRecord.swift */; };
 		6A14985926B8638500C378D1 /* AddRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14985826B8638500C378D1 /* AddRecord.swift */; };
-		6A14985C26B870A300C378D1 /* SwiftUIDatePickerDialog in Frameworks */ = {isa = PBXBuildFile; productRef = 6A14985B26B870A300C378D1 /* SwiftUIDatePickerDialog */; };
 		6A25A1C226B1C41B0079813A /* SelfCareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25A1C126B1C41B0079813A /* SelfCareApp.swift */; };
 		6A25A1C426B1C41B0079813A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25A1C326B1C41B0079813A /* ContentView.swift */; };
 		6A25A1C626B1C41D0079813A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A25A1C526B1C41D0079813A /* Assets.xcassets */; };
@@ -52,7 +51,6 @@
 		6A3C42FA26BB15BD0021EF39 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42F926BB15BD0021EF39 /* FirebaseModel.swift */; };
 		6A3C42FC26BB1F900021EF39 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42FB26BB1F900021EF39 /* UserModel.swift */; };
 		6A3C42FE26BB2A9D0021EF39 /* ProfileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42FD26BB2A9D0021EF39 /* ProfileLoader.swift */; };
-		6A636B6B26BC70B800B00EB4 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 6A636B6A26BC70B800B00EB4 /* SwiftUICharts */; };
 		6A73F65826B99985005D9DC3 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73F65726B99985005D9DC3 /* Onboarding.swift */; };
 		6A73F65A26B9B8D6005D9DC3 /* MedcineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73F65926B9B8D6005D9DC3 /* MedcineModel.swift */; };
 		6A80343426B2E53500E4EC59 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80343326B2E53500E4EC59 /* OnboardingModel.swift */; };
@@ -74,6 +72,9 @@
 		6A89977226B4851300FA0BAD /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A89977126B4851300FA0BAD /* HeaderModel.swift */; };
 		6A89977426B485B300FA0BAD /* PrivacyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A89977326B485B300FA0BAD /* PrivacyScreen.swift */; };
 		6A89977626B489EC00FA0BAD /* LanguageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A89977526B489EC00FA0BAD /* LanguageScreen.swift */; };
+		6A8BC9E226BD9A8500FB6080 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 6A8BC9E126BD9A8500FB6080 /* PartialSheet */; };
+		6A8BC9E526BD9C6800FB6080 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 6A8BC9E426BD9C6800FB6080 /* PopupView */; };
+		6A8BC9E726BDA37600FB6080 /* Covid_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BC9E626BDA37600FB6080 /* Covid_Home.swift */; };
 		6AB5BF9E26BAE47D0076AF8C /* AddMedcine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB5BF9D26BAE47D0076AF8C /* AddMedcine.swift */; };
 		D4659290E6683AEEEC6BD2E9 /* Pods_SelfCareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B805DE249A60B72CF8B55EC9 /* Pods_SelfCareTests.framework */; };
 /* End PBXBuildFile section */
@@ -169,6 +170,7 @@
 		6A89977126B4851300FA0BAD /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
 		6A89977326B485B300FA0BAD /* PrivacyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyScreen.swift; sourceTree = "<group>"; };
 		6A89977526B489EC00FA0BAD /* LanguageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageScreen.swift; sourceTree = "<group>"; };
+		6A8BC9E626BDA37600FB6080 /* Covid_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid_Home.swift; sourceTree = "<group>"; };
 		6AB5BF9D26BAE47D0076AF8C /* AddMedcine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedcine.swift; sourceTree = "<group>"; };
 		822F5677DADB33A939F54080 /* Pods-SelfCare-SelfCareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfCare-SelfCareUITests.release.xcconfig"; path = "Target Support Files/Pods-SelfCare-SelfCareUITests/Pods-SelfCare-SelfCareUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B805DE249A60B72CF8B55EC9 /* Pods_SelfCareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfCareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,10 +183,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A14985C26B870A300C378D1 /* SwiftUIDatePickerDialog in Frameworks */,
-				6A636B6B26BC70B800B00EB4 /* SwiftUICharts in Frameworks */,
+				6A8BC9E526BD9C6800FB6080 /* PopupView in Frameworks */,
 				6A89977026B47FA900FA0BAD /* SunMoonToggleStyle in Frameworks */,
 				0B070896464EB8E9F12E49EC /* Pods_SelfCare.framework in Frameworks */,
+				6A8BC9E226BD9A8500FB6080 /* PartialSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +232,7 @@
 			children = (
 				6A14985626B862F200C378D1 /* NoCovidRecord.swift */,
 				6A14985826B8638500C378D1 /* AddRecord.swift */,
+				6A8BC9E626BDA37600FB6080 /* Covid_Home.swift */,
 			);
 			name = "Covid-19";
 			sourceTree = "<group>";
@@ -472,8 +475,8 @@
 			name = SelfCare;
 			packageProductDependencies = (
 				6A89976F26B47FA900FA0BAD /* SunMoonToggleStyle */,
-				6A14985B26B870A300C378D1 /* SwiftUIDatePickerDialog */,
-				6A636B6A26BC70B800B00EB4 /* SwiftUICharts */,
+				6A8BC9E126BD9A8500FB6080 /* PartialSheet */,
+				6A8BC9E426BD9C6800FB6080 /* PopupView */,
 			);
 			productName = SelfCare;
 			productReference = 6A25A1BE26B1C41B0079813A /* SelfCare.app */;
@@ -551,9 +554,9 @@
 			mainGroup = 6A25A1B526B1C41A0079813A;
 			packageReferences = (
 				6A89976E26B47FA900FA0BAD /* XCRemoteSwiftPackageReference "SunMoonToggleStyle" */,
-				6A14985A26B870A300C378D1 /* XCRemoteSwiftPackageReference "swiftui-date-picker-dialog" */,
-				6A636B6926BC70B800B00EB4 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
 				6A636B6C26BC717C00B00EB4 /* XCRemoteSwiftPackageReference "ChartView" */,
+				6A8BC9E026BD9A8500FB6080 /* XCRemoteSwiftPackageReference "PartialSheet" */,
+				6A8BC9E326BD9C6800FB6080 /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = 6A25A1BF26B1C41B0079813A /* Products */;
 			projectDirPath = "";
@@ -744,6 +747,7 @@
 				6A14985926B8638500C378D1 /* AddRecord.swift in Sources */,
 				6A89976626B471C900FA0BAD /* SettingsModel.swift in Sources */,
 				6A73F65826B99985005D9DC3 /* Onboarding.swift in Sources */,
+				6A8BC9E726BDA37600FB6080 /* Covid_Home.swift in Sources */,
 				6A80343D26B3236700E4EC59 /* ServiceScreen.swift in Sources */,
 				6A80343826B2EA3000E4EC59 /* HomeScreen.swift in Sources */,
 				6A89975E26B43DDD00FA0BAD /* Notifications.swift in Sources */,
@@ -1086,22 +1090,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6A14985A26B870A300C378D1 /* XCRemoteSwiftPackageReference "swiftui-date-picker-dialog" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/globulus/swiftui-date-picker-dialog";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		6A636B6926BC70B800B00EB4 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mecid/SwiftUICharts";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.6.3;
-			};
-		};
 		6A636B6C26BC717C00B00EB4 /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AppPear/ChartView";
@@ -1118,23 +1106,39 @@
 				minimumVersion = 0.0.2;
 			};
 		};
+		6A8BC9E026BD9A8500FB6080 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.12;
+			};
+		};
+		6A8BC9E326BD9C6800FB6080 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6A14985B26B870A300C378D1 /* SwiftUIDatePickerDialog */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6A14985A26B870A300C378D1 /* XCRemoteSwiftPackageReference "swiftui-date-picker-dialog" */;
-			productName = SwiftUIDatePickerDialog;
-		};
-		6A636B6A26BC70B800B00EB4 /* SwiftUICharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6A636B6926BC70B800B00EB4 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
-			productName = SwiftUICharts;
-		};
 		6A89976F26B47FA900FA0BAD /* SunMoonToggleStyle */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6A89976E26B47FA900FA0BAD /* XCRemoteSwiftPackageReference "SunMoonToggleStyle" */;
 			productName = SunMoonToggleStyle;
+		};
+		6A8BC9E126BD9A8500FB6080 /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A8BC9E026BD9A8500FB6080 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
+		};
+		6A8BC9E426BD9C6800FB6080 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A8BC9E326BD9C6800FB6080 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

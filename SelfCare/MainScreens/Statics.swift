@@ -7,7 +7,6 @@
 
 import Foundation
 import SwiftUI
-import SwiftUICharts
 
 
 struct StaticsScreen : View {
@@ -20,9 +19,6 @@ struct StaticsScreen : View {
                 
                 Spacer()
             }.padding()
-            
-            LineView(data: [8,23,54,32,12,37,7,23,43], title: "Covid-19", legend: "Your feelings").padding() // legend is optional, use optional .padding()
-
             Spacer()
         }
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+import PopupView
 
 struct AddMedcine : View {
     @Environment(\.presentationMode) var present
@@ -40,15 +40,17 @@ struct AddMedcine : View {
             
             Header(text: "Name of medcine", color: "primary4", size: 14, font: "Poppins-Regular")
             HStack {
-                TextField("Name", text: $name)
-                    .frame(width: UIScreen.main.bounds.width - 30, height: 46)
+                Text("Medcine")
+                    .font(Font.custom("Poppins-SemiBold", size: 14))
+                    .foregroundColor(Color("primary1"))
                 Spacer()
             }.padding()
             
             Header(text: "Category", color: "primary4", size: 14, font: "Poppins-Regular")
             HStack {
-                TextField("Category", text: $category)
-                    .frame(width: UIScreen.main.bounds.width - 30, height: 46)
+                Text("Medcine")
+                    .font(Font.custom("Poppins-SemiBold", size: 14))
+                    .foregroundColor(Color("primary1"))
                 Spacer()
             }.padding()
             
