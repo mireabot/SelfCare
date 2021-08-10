@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Covid_Home : View {
+    @State var openDiary = false
     var body: some View {
         VStack {
             HStack {
@@ -34,11 +35,14 @@ struct Covid_Home : View {
                 HStack{
                     Spacer()
                     Button(action: {
-                        
+                        self.openDiary.toggle()
                     }){
                         Text("See all")
                             .font(Font.custom("Poppins-Regular", size: 14))
                             .foregroundColor(Color("primary2"))
+                    }
+                    .fullScreenCover(isPresented: $openDiary){
+                        Covid_Diary()
                     }
                 }.padding()
             }

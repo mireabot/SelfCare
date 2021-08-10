@@ -53,6 +53,9 @@
 		6A3C42FE26BB2A9D0021EF39 /* ProfileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C42FD26BB2A9D0021EF39 /* ProfileLoader.swift */; };
 		6A73F65826B99985005D9DC3 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73F65726B99985005D9DC3 /* Onboarding.swift */; };
 		6A73F65A26B9B8D6005D9DC3 /* MedcineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A73F65926B9B8D6005D9DC3 /* MedcineModel.swift */; };
+		6A7C9B1926C2C6A100CBBA3F /* Covid-19 Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C9B1826C2C6A100CBBA3F /* Covid-19 Diary.swift */; };
+		6A7C9B1B26C2CEB800CBBA3F /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C9B1A26C2CEB800CBBA3F /* DiaryModel.swift */; };
+		6A7C9B1F26C3066400CBBA3F /* AddFeelRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C9B1E26C3066400CBBA3F /* AddFeelRecord.swift */; };
 		6A80343426B2E53500E4EC59 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80343326B2E53500E4EC59 /* OnboardingModel.swift */; };
 		6A80343626B2E65A00E4EC59 /* OnboardingWalkThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80343526B2E65A00E4EC59 /* OnboardingWalkThrough.swift */; };
 		6A80343826B2EA3000E4EC59 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80343726B2EA2F00E4EC59 /* HomeScreen.swift */; };
@@ -152,6 +155,9 @@
 		6A3C42FD26BB2A9D0021EF39 /* ProfileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoader.swift; sourceTree = "<group>"; };
 		6A73F65726B99985005D9DC3 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		6A73F65926B9B8D6005D9DC3 /* MedcineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedcineModel.swift; sourceTree = "<group>"; };
+		6A7C9B1826C2C6A100CBBA3F /* Covid-19 Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Covid-19 Diary.swift"; sourceTree = "<group>"; };
+		6A7C9B1A26C2CEB800CBBA3F /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		6A7C9B1E26C3066400CBBA3F /* AddFeelRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFeelRecord.swift; sourceTree = "<group>"; };
 		6A80343326B2E53500E4EC59 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		6A80343526B2E65A00E4EC59 /* OnboardingWalkThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWalkThrough.swift; sourceTree = "<group>"; };
 		6A80343726B2EA2F00E4EC59 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -233,6 +239,8 @@
 				6A14985626B862F200C378D1 /* NoCovidRecord.swift */,
 				6A14985826B8638500C378D1 /* AddRecord.swift */,
 				6A8BC9E626BDA37600FB6080 /* Covid_Home.swift */,
+				6A7C9B1826C2C6A100CBBA3F /* Covid-19 Diary.swift */,
+				6A7C9B1E26C3066400CBBA3F /* AddFeelRecord.swift */,
 			);
 			name = "Covid-19";
 			sourceTree = "<group>";
@@ -408,6 +416,7 @@
 				6A2A31F526B834E600A11040 /* NotificationModel.swift */,
 				6A73F65926B9B8D6005D9DC3 /* MedcineModel.swift */,
 				6A3C42FB26BB1F900021EF39 /* UserModel.swift */,
+				6A7C9B1A26C2CEB800CBBA3F /* DiaryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -729,12 +738,14 @@
 				6A89976826B4728000FA0BAD /* SettingsHub.swift in Sources */,
 				6A14985126B85B6E00C378D1 /* NoRecords.swift in Sources */,
 				6AB5BF9E26BAE47D0076AF8C /* AddMedcine.swift in Sources */,
+				6A7C9B1926C2C6A100CBBA3F /* Covid-19 Diary.swift in Sources */,
 				6A25A21F26B1DCD00079813A /* SignUp.swift in Sources */,
 				6A25A21A26B1D3F60079813A /* Login.swift in Sources */,
 				6A80344226B3332300E4EC59 /* TabBar.swift in Sources */,
 				6A14984E26B8473F00C378D1 /* Premium.swift in Sources */,
 				6A80343626B2E65A00E4EC59 /* OnboardingWalkThrough.swift in Sources */,
 				6A80344026B329A100E4EC59 /* ProfileEdit.swift in Sources */,
+				6A7C9B1B26C2CEB800CBBA3F /* DiaryModel.swift in Sources */,
 				6A25A21526B1C5FC0079813A /* Splash.swift in Sources */,
 				6A80343B26B2F62300E4EC59 /* CardModel.swift in Sources */,
 				6A89976D26B47F1100FA0BAD /* AppearanceScreen.swift in Sources */,
@@ -756,6 +767,7 @@
 				6A89977626B489EC00FA0BAD /* LanguageScreen.swift in Sources */,
 				6A25A22526B1DFD60079813A /* OnboardigView.swift in Sources */,
 				6A25A1C226B1C41B0079813A /* SelfCareApp.swift in Sources */,
+				6A7C9B1F26C3066400CBBA3F /* AddFeelRecord.swift in Sources */,
 				6A3C42FE26BB2A9D0021EF39 /* ProfileLoader.swift in Sources */,
 				6A89976426B43FA100FA0BAD /* ProfileScreen.swift in Sources */,
 				6A89977226B4851300FA0BAD /* HeaderModel.swift in Sources */,
