@@ -6,7 +6,7 @@ You can see some facts and samples below:
 
 # Design project
 
-![Alt text](https://www.figma.com/file/OgCBicf5iF2vI0IKikupPZ/Selfcare?node-id=0%3A1)
+https://www.figma.com/file/OgCBicf5iF2vI0IKikupPZ/Selfcare?node-id=0%3A1
 
 # Stack
 
